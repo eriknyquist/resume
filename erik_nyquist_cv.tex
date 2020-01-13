@@ -9,10 +9,71 @@
 \addtolength{\evensidemargin}{-8em}
 
 \titleformat*{\section}{\tiny}
-\textheight=70em
+\textheight=65em
 
 \begin{document}
-\centerline{\Huge \bfseries Erik Nyquist}
+%
+% Start of "Personal Details" section
+%
+\hspace*{-\parindent}%
+\begin{minipage}[t]{15em}
+\section*{}
+{\underline{\textbf{Personal Details}}}
+\break
+
+{\small Website: https://www.ekn.io
+
+Github: eriknyquist
+
+Email: eknyquist@gmail.com}
+
+\section*{}
+{\underline{\textbf{Areas of Expertise}}}
+\subsection*{}
+{\textbf{Programming Languages}}
+
+{\small C
+
+C++
+
+Python
+
+UNIX shell scripting (bash, sh)}
+
+\subsection*{}
+{\textbf{Tools \& Environments}}
+
+{\small Git
+
+GCC/Clang
+
+Makefiles
+
+GNU ld (linker) scripting
+
+Protobufs
+
+GDB
+
+OpenOCD
+
+Valgrind
+
+Eclipse
+
+Jenkins
+
+JIRA}
+
+\end{minipage}
+%
+% Start of main section (page 1)
+%
+\begin{minipage}{35em}
+%
+% Document title
+%
+{\Huge \bfseries Erik Nyquist}
 \section*{}
 
 An enthusiastic and skillful software engineer, with a comprehensive knowledge of
@@ -82,8 +143,15 @@ bare-metal).
           (bare-metal, or using the Zephyr kernel) that can fully utilize the two asynchronous
           CPU cores on an Intel Curie device (www.intel.com/curieodk).
 \end{itemize}
-
+\end{minipage}
+%
+% Start of main section (page 2)
+%
 \hspace*{-\parindent}%
+\begin{minipage}{15em}
+    hi
+\end{minipage}
+\begin{minipage}{35em}
 \begin{minipage}{20em}
 {\bfseries SoC Software Engineer, Intel \\
 San Diego, CA}
@@ -143,5 +211,6 @@ University College Dublin, Belfield, Ireland \\
 \break
 {\bfseries Bachelor of Engineering, Audio Visual Media Technology} \\
 Dun Laoghaire Institute of Art, Design and Technology, Dublin, Ireland
+\end{minipage}
 
 \end{document}
