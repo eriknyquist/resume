@@ -2,6 +2,7 @@
 
 \usepackage[none]{hyphenat}
 \usepackage{titlesec}
+\usepackage{enumitem}
 
 \titlespacing*{\section}{0pt}{0.0\baselineskip}{\baselineskip}
 \addtolength{\topmargin}{-10em}
@@ -11,12 +12,18 @@
 \titleformat*{\section}{\tiny}
 \textheight=65em
 
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+
+\setlist[itemize]{leftmargin=*}
+
 \begin{document}
 %
-% Start of "Personal Details" section
+% Start of "Personal Details" section (sidebar)
 %
 \hspace*{-\parindent}%
-\begin{minipage}[t]{15em}
+\begin{minipage}{15em}
 \section*{}
 {\underline{\textbf{Personal Details}}}
 \break
@@ -51,7 +58,7 @@ Makefiles
 
 GNU ld (linker) scripting
 
-Protobufs
+Google Protocol Buffers
 
 GDB
 
@@ -59,11 +66,25 @@ OpenOCD
 
 Valgrind
 
+LaTeX
+
 Eclipse
 
 Jenkins
 
 JIRA}
+
+\subsection*{}
+{\textbf{Personal Skills}}
+
+\noindent
+\begin{itemize}
+{\small
+    \item Test-driven development
+    \item Hardware-level fault finding and debugging
+    \item C and C++ for memory constrained embedded systems
+}
+\end{itemize}
 
 \end{minipage}
 %
@@ -83,8 +104,10 @@ environment.
 
 \section*{}
 {\Large \bfseries Experience}
-\break
-
+%
+% Current job
+%
+\subsection*{}
 \hspace*{-\parindent}%
 \begin{minipage}{20em}
 {\bfseries Firmware Engineer, NOVO Engineering \\
@@ -109,9 +132,12 @@ systems (Linux, FreeRTOS)
     \item Developed USB drivers (C, C++) for a FreeRTOS-based product prototype system
     \item Developed automated unit tests and integration tests (Python) for several products
 \end{itemize}
-
 \hspace*{-\parindent}%
 \begin{minipage}{20em}
+%
+% Previous job
+%
+\subsection*{}
 {\bfseries Software Engineer, Intel \\
 San Diego, CA}
 \end{minipage}
@@ -147,19 +173,22 @@ bare-metal).
 %
 % Start of main section (page 2)
 %
-\hspace*{-\parindent}%
-\begin{minipage}{15em}
-    hi
-\end{minipage}
-\begin{minipage}{35em}
+\hspace{2em}
+\begin{minipage}{50em}
 \begin{minipage}{20em}
-{\bfseries SoC Software Engineer, Intel \\
+%
+% Previous job
+%
+\subsection*{}
+{\bfseries SoC Software Engineer, Intel
+
 San Diego, CA}
+
 \end{minipage}
 \hfill
-\begin{minipage}{14em}
+\begin{minipage}{28em}
 {
-    \bfseries \hfill Sep. 2014 - Apr. 2016 \\
+    \bfseries \hfill Sep. 2014 - Apr. 2016
 
 }
 \end{minipage}
@@ -183,13 +212,19 @@ metal).
 
 \hspace*{-\parindent}%
 \begin{minipage}{20em}
-{\bfseries Software Design Engineer, Intel \\
+%
+% Previous job
+%
+\subsection*{}
+{\bfseries Software Design Engineer, Intel
+
 Ireland}
+
 \end{minipage}
 \hfill
 \begin{minipage}{14em}
 {
-    \bfseries \hfill Aug. 2012 - Sept. 2014 \\
+    \bfseries \hfill Aug. 2012 - Sept. 2014
 
 }
 \end{minipage}
@@ -197,20 +232,23 @@ Ireland}
 \break
 Developed and tested Linux-based software \& drivers for the Intel Quark X1000 SoC. Brought Intel
 Galileo board (first x86-based Arduino board) from design to market.
-- Prototyped software solutions for supporting Arduino-compatible code on an embedded linux-
-based platform
-- Usability and functional testing of customer SW tools (Code editor/IDE, setup tools and scripts)
-- Provided technical support to users via online forum www.maker.intel.com
+\begin{itemize}
+    \item Prototyped software solutions for supporting Arduino-compatible code on an embedded linux-
+          based platform
+    \item Usability and functional testing of customer SW tools (Code editor/IDE, setup tools and scripts)
+    \item Provided technical support to users via online forum www.maker.intel.com
+\end{itemize}
 
 \section*{}
 {\Large \bfseries Education}
-\break
-\break
-{\bfseries Master of Science, Computer Science} \\
-University College Dublin, Belfield, Ireland \\
-\break
-{\bfseries Bachelor of Engineering, Audio Visual Media Technology} \\
-Dun Laoghaire Institute of Art, Design and Technology, Dublin, Ireland
-\end{minipage}
+\subsection*{}
+{\bfseries Master of Science, Computer Science}
 
+University College Dublin, Belfield, Ireland
+\subsection*{}
+{\bfseries Bachelor of Engineering, Audio Visual Media Technology}
+
+Dun Laoghaire Institute of Art, Design and Technology, Dublin, Ireland
+
+\end{minipage}
 \end{document}
