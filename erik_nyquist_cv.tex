@@ -3,6 +3,7 @@
 \usepackage[none]{hyphenat}
 \usepackage{titlesec}
 \usepackage{enumitem}
+\pagenumbering{gobble}
 
 \titlespacing*{\section}{0pt}{0.0\baselineskip}{\baselineskip}
 \addtolength{\topmargin}{-10em}
@@ -24,18 +25,19 @@
 %
 \hspace*{-\parindent}%
 \begin{minipage}{15em}
+\textheight=65em
 \section*{}
-{\underline{\textbf{Personal Details}}}
+{\fontfamily{qhv}\selectfont \underline{\textbf{Personal Details}}}
 \break
 
-{\small Website: https://www.ekn.io
+{\small {\bfseries Website} -- https://www.ekn.io
 
-Github: eriknyquist
+{\bfseries Github} -- eriknyquist
 
-Email: eknyquist@gmail.com}
+{\bfseries Email} -- eknyquist@gmail.com}
 
 \section*{}
-{\underline{\textbf{Areas of Expertise}}}
+{\fontfamily{qhv}\selectfont \underline{\textbf{Areas of Expertise}}}
 \subsection*{}
 {\textbf{Programming Languages}}
 
@@ -66,28 +68,31 @@ OpenOCD
 
 Valgrind
 
-LaTeX
+{\LaTeX}
 
 Eclipse
 
 Jenkins
 
-JIRA}
+JIRA
+
+Unity/CMock}
 
 \subsection*{}
-{\underline{\textbf{Personal Skills}}}
+{\fontfamily{qhv}\selectfont \underline{\textbf{Personal Skills}}}
 
 \noindent
 \begin{itemize}
 {\small \raggedright
     \item Test-driven development
-    \item Hardware-level fault finding and debugging
+    \item Fault finding and debugging on embedded systems
     \item C and C++ for memory constrained embedded systems
+    \item Rapid prototyping/testing with Python or UNIX shell scripting
 }
 \end{itemize}
 
 \subsection*{}
-{\underline{\textbf{Interests}}}
+{\fontfamily{qhv}\selectfont \underline{\textbf{Interests}}}
 
 \noindent
 \begin{itemize}
@@ -105,7 +110,8 @@ JIRA}
 %
 % Document title
 %
-{\Huge \bfseries Erik Nyquist}
+{\fontfamily{qhv}\selectfont \Huge \bfseries Erik Nyquist}
+{\hfill \today}
 \section*{}
 
 An enthusiastic and skillful software engineer, with a comprehensive knowledge of
@@ -114,7 +120,7 @@ delivering and enforcing high quality code and documentation in a high-pressure
 environment.
 
 \section*{}
-{\Large \bfseries Experience}
+{\fontfamily{qhv}\selectfont \Large \bfseries Experience}
 
 \titlerule
 %
@@ -245,7 +251,7 @@ Galileo board (first x86-based Arduino board) from design to market.
 \end{itemize}
 
 \section*{}
-{\Large \bfseries Education}
+{\fontfamily{qhv}\selectfont \Large \bfseries Education}
 
 \titlerule
 \subsection*{}
