@@ -7,19 +7,20 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{lmodern}
+\usepackage{hyperref}
 \pagenumbering{gobble}
 
 \titlespacing*{\section}{0pt}{0.0\baselineskip}{\baselineskip}
-\addtolength{\topmargin}{-9em}
+\addtolength{\topmargin}{-12em}
 \addtolength{\oddsidemargin}{-8em}
-\addtolength{\evensidemargin}{-8em}
+\addtolength{\evensidemargin}{-4em}
 
 \titleformat*{\section}{\tiny}
 \textheight=65em
 
-\titlespacing{\section}{0pt}{2ex}{1ex}
-\titlespacing{\subsection}{0pt}{1ex}{0ex}
-\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+\titlespacing{\section}{0pt}{0.1ex}{0ex}
+\titlespacing{\subsection}{0pt}{0.1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.1ex}{0ex}
 
 \setlist[itemize]{leftmargin=*}
 
@@ -27,7 +28,6 @@
 %
 % Start of "Personal Details" section (sidebar)
 %
-%\hspace*{-3em}
 \begin{minipage}{13em}
 \textheight=65em
 \section*{}
@@ -69,7 +69,9 @@ Makefiles
 
 GNU ld (linker) scripts
 
-Google Protocol Buffers
+Protocol Buffers (protobuf)
+
+PyQt
 
 GDB
 
@@ -83,49 +85,61 @@ JIRA
 
 Unity/CMock
 
-Doxygen}
+Doxygen
+
+FreeRTOS}
 
 \subsection*{}
 {\underline{\textbf{Personal skills}}}
 
 \noindent
+\begin{flushleft}
 \begin{itemize}
-{\small \raggedright
+{\small
     \item Test-driven development
     \item Fault finding and debugging on custom embedded systems
+    \item Custom board/hardware bringup
     \item Firmware system design for memory constrained embedded systems
     \item Rapid prototyping/testing with Python or UNIX shell scripting
     \item MISRA C compliance via static analysis tools
 }
 \end{itemize}
+\end{flushleft}
 
 \subsection*{}
 {\underline{\textbf{Interests}}}
 
 \noindent
+\begin{flushleft}
 \begin{itemize}
-{\small \raggedright
+{\small
     \item Compiler design \& implementation
     \item Programming language design \& implementation
     \item Playing music (drums, piano)
     \item Music recording \& production
 }
 \end{itemize}
+\end{flushleft}
 \end{minipage}
 \hspace*{2em}
 %
 % Start of main section (page 1)
-\begin{minipage}{35em}
+\begin{minipage}{38em}
+\bigskip{}
+\bigskip{}
+\bigskip{}
 %
 % Document title
 %
 {\Huge \bfseries Erik Nyquist}
 {\hfill \today}
 \section*{}
-An enthusiastic and skillful software engineer, with a comprehensive knowledge of
+\begin{flushleft}
+An enthusiastic and skillful software/firmware engineer, with a comprehensive knowledge of
 development and validation practices for embedded software systems. Accustomed to
 delivering and enforcing high quality code, tests, and documentation.
-\hfill \break
+\end{flushleft}
+%\hfill
 \section*{}
 {\Large \bfseries Experience}
 
@@ -143,8 +157,8 @@ Vista, CA}
 \begin{minipage}{10em}
 {\bfseries Aug. 2017 - present}
 \end{minipage}
-\break
-
+%\break
+\begin{flushleft}
 Designing and developing firmware and software for IEC-62304 compliant medical
 device products (RTOS and bare-metal)
 \begin{itemize}
@@ -156,8 +170,8 @@ device products (RTOS and bare-metal)
     \item Participated in creation of software development lifecycle and
           verification documentation for multiple medical device products
 \end{itemize}
+\end{flushleft}
 \dotfill
-
 %
 % Previous job
 %
@@ -171,18 +185,19 @@ San Diego, CA}
 \begin{minipage}{12em}
 {\bfseries Aug. 2016 - Aug. 2017}
 \end{minipage}
-\break
-
+%\break
+\begin{flushleft}
 Developed low-level hardware drivers and firmware for Intel's low-power SoC products
 with a small team, including Intel's Galileo, Joule and Curie modules (Linux, RTOS and
 bare-metal). Most notably, the Intel Arduino 101 development/maker board.
 \begin{itemize}
-    \item www.github.com/01org/corelibs-arduino101
-    \item www.github.com/01org/Intel-Pattern-Matching-Technology
-    \item www.github.com/01org/zephyr
+    \setlength\itemsep{0em}
+    \item \url{www.github.com/01org/corelibs-arduino101}
+    \item \url{www.github.com/01org/Intel-Pattern-Matching-Technology}
+    \item \url{www.github.com/01org/zephyr}
 \end{itemize}
+\end{flushleft}
 \dotfill
-
 %
 % Previous job
 %
@@ -197,25 +212,42 @@ Ireland}
 \begin{minipage}{12em}
 {\bfseries \hfill Aug. 2012 - Apr. 2016}
 \end{minipage}
-\break
-
+%\break
+\begin{flushleft}
 Started as an intern after college, became a permanent employee after 6 months. Eventually
 participated in development/testing of Linux-based software \& drivers for Intel Quark SoCs,
 bringing the Intel Galileo board (first x86-based Arduino board) from design to market,
 pre-silicon emulation testing/verification for Intel Quark SoCs, and new silicon bringup for Quark SoCs.
+\end{flushleft}
 
 \section*{}
 {\Large \bfseries Education}
 
 \dotfill
 \subsection*{}
+\begin{flushleft}
 {\bfseries Master of Science, Computer Science}
 
 University College Dublin, Belfield, Ireland. Graduated 2015.
+
 \subsection*{}
 {\bfseries Bachelor of Engineering, Audio Visual Media Technology}
 
 Dun Laoghaire Institute of Art, Design and Technology, Dublin, Ireland. Graduated 2012.
+\end{flushleft}
+
+\section*{}
+{\Large \bfseries Notable Github projects}
+
+\dotfill
+\subsection*{}
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \url{www.github.com/eriknyquist/ptttl}
+    \item \url{www.github.com/eriknyquist/arduinozero-metronome}
+    \item \url{www.github.com/eriknyquist/duckargs}
+    \item \url{www.github.com/eriknyquist/deep\_space\_trader}
+\end{itemize}
 
 \end{minipage}
 \end{document}
